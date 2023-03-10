@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" style="min-height: 100%;">
+<head>
+  <title>GeoPro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    #Telegram{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 5.5vmin;
+        background: transparent;
+        border: 0;
+        text-align: center;
+        color: rgb(70, 70, 70);
+        transition-duration: 0.4s;
+    }
+    #Telegram:hover{
+        color: rgb(90, 90, 90);
+    }
+    #GitHub{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 5.5vmin;
+        background: transparent;
+        border: 0;
+        text-align: center;
+        color: rgb(70, 70, 70);
+        transition-duration: 0.4s;
+    }
+    #GitHub:hover{
+        color: rgb(90, 90, 90);
+    }
+    #Mail{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 5.5vmin;
+        background: transparent;
+        border: 0;
+        text-align: center;
+        color: rgb(70, 70, 70);
+        transition-duration: 0.4s;
+    }
+    #Mail:hover{
+        color: rgb(90, 90, 90);
+    }
+    #main{
+        text-decoration: none;
+        color: rgb(90, 90, 90);
+    }
+    #main_btn{
+        background: transparent;
+        border: 0;
+        font-size: 10vmin;
+        font-family: 'Courier New', Courier, monospace;
+        user-select: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    #earth {
+     background-image: url('https://phonoteka.org/uploads/posts/2021-06/thumbs/1623395000_8-phonoteka_org-p-tekstura-zemli-iz-kosmosa-krasivo-10.jpg');
+      /* a black shadow from left and white from right */
+      box-shadow: inset 16px 0 40px 3px rgba(0,0,0,0.9),
+        inset -3px 0 5px 2px rgba(255,255,255,0.16);
+      background-size: 88vmin;
+      margin: 20px auto;
+      border-radius: 50%;
+      position: relative;
+      animation-name: move,scale,rotate;
+      animation-duration: 8s,8s,8s;
+      animation-iteration-count: infinite,infinite,infinite;
+      animation-timing-function: ease-in-out,linear,linear;
+    }
+    
+     
+    @keyframes rotate {
+      0% { background-position: 0px; }
+      100% { background-position: 88vmin;; }
+    }
+  </style>
+</head>
+<body style="background: linear-gradient(171deg, #121212,#181818);">
+    <div class="col">
+        <div style="height: 5vh;"></div>
+        <div class="container text-center">
+            <div id = 'earth' alt="avatar" style="border-radius: 50%; width: 50vmin; height: 50vmin;">
+        </div>
+        <div style="height: 10vh;"></div>
+        <a href="about.html" id = 'main'><button id = 'main_btn'><p style = "position: absolute; left: 0; right: 0;"><b>UltraGeoPro1966</b></p></button></a>
+        <p class="text-center" style="color: rgb(70, 70, 70); font-size: 5vmin; font-family: 'Courier New', Courier, monospace; position: absolute; left: 0; right: 0; margin-top: -2.5vh; user-select: none;">Brillante programador de Rusia</p>
+    </div>
+    <div class="container" style="position: absolute; bottom: 10px; left: 0; right: 0;">
+        <div class="row text-center">
+            <button type="button" class="col-xs-4" id = "Telegram">Telegram</button>
+            <button type="button" class="col-xs-4" id = "GitHub">GitHub</button>
+            <button type="button" class="col-xs-4" id = "Mail">Mail</button>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
